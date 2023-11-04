@@ -1,0 +1,51 @@
+.hdr{
+    background-color:greenyellow;
+    height:125px;
+}
+h1{
+    text-align:center;
+    color:white;
+    font-size:50;
+    positon:relative;
+    transition:1.5s;
+
+}
+h1:hover{
+    aniamtion-name:hhh;
+    animation-duration:5s;
+    aniamtion-iteration-count:1;
+    color:black;
+    transform:scale(1.4);
+}
+.body{
+    background-color:grey;
+    height:680px;
+}
+.two{
+    text-align:center;
+    font-size:100px;
+    position:relative;
+    color:white;
+    animation-name:txt;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+    transition:1s;
+}
+.two:hover{
+    animation-play-state:paused;
+    color:red;
+}
+
+@keyframes txt{
+    0%{transform:scale(1.1);}
+    25%{transoform:scale(1.2);}
+    50%{transoform:scale(1.3);}
+    75%{transoform:scale(1.2);}
+    100%{transoform:scale(1.1);}
+}
+
+@keyframes hhh{
+    0%{top:5px;}
+    100%{top:680px;}
+
+}
